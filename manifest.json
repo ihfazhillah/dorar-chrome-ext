@@ -1,0 +1,26 @@
+{
+  "name": "Dorar Hadith [Un Official]",
+  "description": "Search takhrij hadith through dorar.net",
+  "version": "0.1",
+  "permissions": [
+    "contextMenus",
+    "http://*/"
+  ],
+  "background": {
+    "scripts": [
+      "dorar.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["modal.js"],
+      "css": ["css/style.css"],
+      "run_at": "document_end",
+      "web_accessible_resources": [
+  "css/fonts/*.woff"
+]
+    }
+  ],
+  "manifest_version": 2
+}

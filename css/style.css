@@ -1,0 +1,145 @@
+/* 
+ * green = #3e6a13
+ * greenYellow = #8a701c;
+ * red = #cc0000;
+ * font-family= 'Amiri', 'Traditional Arabic'
+ */
+
+
+
+@font-face{
+  font-family: "Amiri";
+  src: url('https://fonts.googleapis.com/css?family=Amiri') format(waff);
+}
+
+
+/* The Modal (background) */
+.dorar-modal {
+  font-family: 'Amiri', 'Traditional Arabic' !important;
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none;
+  overflow: auto;
+  transition: all 0.3s ease-in;
+}
+
+.dorar-modal * {
+  font-family: 'Amiri', 'Traditional Arabic' !important;
+}
+
+.dorar-modal h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.dorar-modal h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+
+/* Modal Content/Box */
+.dorar-modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  width: 80%; /* Could be more or less, depending on screen size */
+  text-align: right;
+  direction: rtl;
+  border-radius: 20px;
+}
+
+.dorar-modal-header{
+  background: #3e6a13;
+  margin: 0;
+  padding: 10px;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.dorar-modal-body {
+  padding: 20px;
+  font-size: 16pt;
+  line-height: 170%;
+  color: white;
+  overflow: auto;
+  max-height: 300px;
+}
+
+.dorar-modal-footer {
+  background: #3e6a13;
+  margin:0;
+  color: white;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.dorar-modal-footer a,
+.dorar-modal-footer a:visited {
+  color: #3399ff;
+  text-decoration:none;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    background: #8a701c;
+    text-align: center;
+    text-align: -webkit-center;
+    padding: 26px;
+    width: 5%;
+    margin: -10px;
+    border-radius: 10px 0 0 0;
+    transition: all 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+    background: #685310;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* hadith */
+
+.hadith {
+  color: #333;
+}
+
+.hadith-info {
+  color: #8a701c;
+}
+
+.hadith-info .info-subtitle {
+  color: #3e6a13;
+}
+
+.hadith-info .info-subtitle:not(:first-child):not(:nth-child(4)):before{
+  content: "| ";
+  color: red;
+  font-size: 25px;
+}
+
+/* force line break */
+.hadith-info .info-subtitle:nth-child(4):before{
+  content: "\A";
+  white-space:pre;
+}
+
+.search-keys {
+  color: #cc0000;
+}
