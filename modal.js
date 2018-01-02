@@ -27,7 +27,10 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 
   switch (message.type) {
     case "createModal":
-      document.body.innerHTML += modalStructure;
+      var modalStruc = document.createElement("div");
+
+      modalStruc.innerHTML = modalStructure;
+      document.body.insertAdjacentElement("afterbegin", modalStruc);
 
       const close = document.querySelector(".dorar-modal .close");
       const modal = document.querySelector(".dorar-modal");
