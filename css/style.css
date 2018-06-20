@@ -91,7 +91,7 @@
 }
 
 /* The Close Button */
-.close {
+.dorar-modal .close {
     color: white;
     float: left;
     font-size: 28px;
@@ -106,8 +106,8 @@
     transition: all 0.3s ease;
 }
 
-.close:hover,
-.close:focus {
+.dorar-modal .close:hover,
+.dorar-modal .close:focus {
     color: #333;
     background: #685310;
     text-decoration: none;

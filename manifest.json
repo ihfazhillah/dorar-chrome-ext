@@ -1,10 +1,9 @@
 {
   "name": "Dorar Hadith [Un Official]",
   "description": "Search takhrij hadith through dorar.net",
-  "version": "0.1",
+  "version": "0.5",
   "permissions": [
-    "contextMenus",
-    "http://*/"
+    "contextMenus"
   ],
   "background": {
     "scripts": [
@@ -13,14 +12,23 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://*/*", "http://*/*"],
-      "js": ["modal.js"],
-      "css": ["css/style.css"],
-      "run_at": "document_end",
-      "web_accessible_resources": [
-  "css/fonts/*.woff"
-]
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "js": [
+        "modal.js"
+      ],
+      "css": [
+        "css/style.css"
+      ],
+      "run_at": "document_end"
     }
   ],
-  "manifest_version": 2
+  "manifest_version": 2,
+  "icons": {
+    "16": "dorar.png",
+    "32": "dorar.png",
+    "128": "dorar.png"
+  }
 }
